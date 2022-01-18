@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import 'bulma/css/bulma.css';
-import FoodBox from './FoodBox/FoodBox'
-import foods from './foods.json'
+import FoodBox from './FoodBox/FoodBox';
+import foods from './foods.json';
+import AddFood from './AddFood/AddFood';
 
 
 function App() {
