@@ -20,7 +20,11 @@ class AddFood extends React.Component {
     }
 
     handleChange = (e) => {
-        let { name, value } = e.currentTarget
+
+        let { name, value } = e.target
+
+        // name = calories
+        // value = trois cent
 
         this.setState({
             [name]: value,
@@ -36,6 +40,7 @@ class AddFood extends React.Component {
             calories: this.state.calories,
             quantity: this.state.quantity,
         })
+        console.log(e)
     }
 
     render() {
@@ -60,7 +65,7 @@ class AddFood extends React.Component {
                        Quantity: <input onChange={this.handleChange} value={this.state.quantity} type="number" name="quantity" ></input>
                     </label>
 
-                    <button type="submit">Submit value="Crear Comida"</button>
+                    <button type="submit">Submit"</button>
                 </form>
           
             </div>
